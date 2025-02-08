@@ -81,7 +81,7 @@ export default function TodoList() {
       <div className="flex gap-2 text-2xl">
         <input
           type="text"
-          className="border p-2 flex-grow rounded"
+          className="border p-2 flex-grow rounded text-black"
           value={task}
           onChange={(e) => setTask(e.target.value)}
           placeholder="Add a new task..."
