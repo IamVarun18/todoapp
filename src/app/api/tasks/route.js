@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
-import dbConnect from "@/app/lib/dbConnect";
-import Task from "@/app/models/Task";
+import dbConnect from '../../lib/dbConnect';  // Relative path from 'tasks/route.js' to 'lib/dbConnect.js'
+
+import Task from '../../models/Task';  // Use a relative path for Task model
+
 
 // ✅ GET: Fetch all tasks
 export async function GET() {
